@@ -1,14 +1,11 @@
 #include <algorithm>
 #include <chrono>
 #include <cmath>
-#include <fcntl.h>
 #include <functional>
 #include <iostream>
 #include <memory>
 #include <string>
 #include <thread>
-#include <termios.h>
-#include <unistd.h>
 #include <vector>
 
 #include <rclcpp/rclcpp.hpp>
@@ -21,41 +18,6 @@ using namespace rp::standalone::rplidar;
 
 namespace {
 
-int openSerialPort(const std::string& portName, int baudRate) {
-    (void)baudRate;
-
-    int fd = open(portName.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
-    if (fd == -1) {
-        std::cerr << "Failed to open serial port: " << portName << std::endl;
-        return -1;
-    }
-
-    struct termios options;
-    tcgetattr(fd, &options);
-    cfsetispeed(&options, B115200);
-    cfsetospeed(&options, B115200);
-
-    options.c_cflag |= (CLOCAL | CREAD);
-    options.c_cflag &= ~PARENB;
-    options.c_cflag &= ~CSTOPB;
-    options.c_cflag &= ~CSIZE;
-    options.c_cflag |= CS8;
-    options.c_lflag &= ~(ICANON | ECHO | ECHOE | ISIG);
-    options.c_oflag &= ~OPOST;
-
-    tcsetattr(fd, TCSANOW, &options);
-    return fd;
-}
-
-void sendCommand(int serialFd, int steerAngle, int throttle) {
-    if (serialFd < 0) {
-        return;
-    }
-
-    std::string packet = "CMD:" + std::to_string(steerAngle) + "," + std::to_string(throttle) + "\n";
-    write(serialFd, packet.c_str(), packet.length());
-}
-
 }  // namespace
 
 class LidarControllerNode : public rclcpp::Node {
@@ -63,14 +25,8 @@ public:
   LidarControllerNode()
   : Node("lidar_controller_node"),
     lidarPort_("/dev/ttyUSB0"),
-    esp32Port_("/dev/ttyUSB1"),
     lidarBaudrate_(460800),
-    esp32Fd_(openSerialPort(esp32Port_, B115200)),
     driver_(RPlidarDriver::CreateDriver(CHANNEL_TYPE_SERIALPORT)) {
-    if (esp32Fd_ < 0) {
-      RCLCPP_WARN(this->get_logger(), "Proceeding without active ESP32 serial link.");
-    }
-
     if (!driver_) {
       RCLCPP_ERROR(this->get_logger(), "Failed to construct RPLidar driver.");
       return;
@@ -84,7 +40,7 @@ public:
     driver_->startMotor();
     driver_->startScan(0, 1);
 
-    RCLCPP_INFO(this->get_logger(), "Autonomous navigator running. Publishing cmd_vel and forwarding to ESP32.");
+    RCLCPP_INFO(this->get_logger(), "Autonomous navigator running. Publishing cmd_vel.");
 
     cmd_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
     timer_ = this->create_wall_timer(
@@ -98,11 +54,6 @@ public:
       driver_->stopMotor();
       RPlidarDriver::DisposeDriver(driver_);
       driver_ = nullptr;
-    }
-
-    if (esp32Fd_ >= 0) {
-      close(esp32Fd_);
-      esp32Fd_ = -1;
     }
   }
 
@@ -204,14 +155,10 @@ private:
     twist_msg.linear.x = static_cast<double>(throttle) / 40.0;
     twist_msg.angular.z = static_cast<double>(steer - 90) / 45.0;
     cmd_pub_->publish(twist_msg);
-
-    sendCommand(esp32Fd_, steer, throttle);
   }
 
   std::string lidarPort_;
-  std::string esp32Port_;
   uint32_t lidarBaudrate_;
-  int esp32Fd_;
   RPlidarDriver* driver_;
 
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_pub_;

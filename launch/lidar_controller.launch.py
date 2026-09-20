@@ -9,5 +9,11 @@ def generate_launch_description():
             executable='lidar_controller_node',
             name='lidar_controller_node',
             output='screen',
+        ),
+        Node(
+            package='lidar_car_controller',
+            executable='esp32_bridge_node',
+            name='esp32_bridge_node',
+            output='screen',
         )
     ])
