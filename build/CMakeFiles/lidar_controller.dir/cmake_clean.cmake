@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/lidar_controller.dir/lidar_controller.cpp.o"
+  "CMakeFiles/lidar_controller.dir/lidar_controller.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/arch/linux/net_serial.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/arch/linux/net_serial.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/arch/linux/net_socket.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/arch/linux/net_socket.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/arch/linux/timer.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/arch/linux/timer.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/dataunpacker/dataunpacker.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/dataunpacker/dataunpacker.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/hal/thread.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/hal/thread.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/rplidar_driver.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/rplidar_driver.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_async_transceiver.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_async_transceiver.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_crc.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_crc.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_lidar_driver.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_lidar_driver.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_lidarprotocol_codec.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_lidarprotocol_codec.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_serial_channel.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_serial_channel.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_tcp_channel.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_tcp_channel.cpp.o.d"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_udp_channel.cpp.o"
+  "CMakeFiles/lidar_controller.dir/sdk/src/sl_udp_channel.cpp.o.d"
+  "lidar_controller"
+  "lidar_controller.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/lidar_controller.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

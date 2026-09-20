@@ -1,24 +1,44 @@
-cmake_minimum_required(VERSION 3.10)
-project(lidar_car_controller)
+cmake_minimum_required(VERSION 3.16)
+project(lidar_car_controller LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 14)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+  set(CMAKE_CXX_EXTENSIONS OFF)
+endif()
+
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 set(RPLIDAR_ROOT "$ENV{HOME}/rplidar_sdk")
 
-# Header search paths
 include_directories(
-    ${RPLIDAR_ROOT}/sdk/include
-    ${RPLIDAR_ROOT}/sdk/src
+  ${RPLIDAR_ROOT}/sdk/include
+  ${RPLIDAR_ROOT}/sdk/src
 )
 
-# Recursively find all C++ source files in sdk/src (including all unpacker modes)
 file(GLOB_RECURSE SDK_SOURCES
-    "${RPLIDAR_ROOT}/sdk/src/*.cpp"
+  "${RPLIDAR_ROOT}/sdk/src/*.cpp"
 )
 
-# Exclude any Windows/macOS architecture files that might have been caught
 list(FILTER SDK_SOURCES EXCLUDE REGEX ".*/arch/win32/.*")
 list(FILTER SDK_SOURCES EXCLUDE REGEX ".*/arch/macOS/.*")
 
-add_executable(lidar_controller lidar_controller.cpp ${SDK_SOURCES})
-target_link_libraries(lidar_controller pthread)
+add_executable(lidar_controller_node
+  lidar_controller.cpp
+  ${SDK_SOURCES}
+)
+
+ament_target_dependencies(lidar_controller_node
+  rclcpp
+  geometry_msgs
+)
+
+target_link_libraries(lidar_controller_node pthread)
+
+install(TARGETS lidar_controller_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+ament_package()
