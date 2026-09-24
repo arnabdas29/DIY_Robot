@@ -63,11 +63,11 @@ private:
       return;
     }
 
-    const float SAFE_DISTANCE_MM = 1200.0f;
-    const float CAUTION_DISTANCE_MM = 3000.0f;
-    const float SIDE_CLEARANCE_MM = 600.0f;
-    const float MAX_THROTTLE = 40.0f;
-    const float MIN_THROTTLE = 10.0f;
+    const float SAFE_DISTANCE_MM = 300.0f;
+    const float CAUTION_DISTANCE_MM = 200.0f;
+    const float SIDE_CLEARANCE_MM = 100.0f;
+    const float MAX_THROTTLE = 7.5f;
+    const float MIN_THROTTLE = 5.0f;
 
     rplidar_response_measurement_node_hq_t nodes[8192];
     size_t count = sizeof(nodes) / sizeof(nodes[0]);
@@ -105,7 +105,7 @@ private:
     }
 
     int steer = 90;
-    int throttle = 40;
+    int throttle = 5;
 
     float frontRisk = 0.0f;
     if (minFrontDist < CAUTION_DISTANCE_MM) {
@@ -118,21 +118,21 @@ private:
     if (desiredThrottle < MIN_THROTTLE) {
       desiredThrottle = MIN_THROTTLE;
     }
-    throttle = static_cast<int>(desiredThrottle);
+    throttle = static_cast<int>(std::round(desiredThrottle));
 
     float sideBias = minLeftDist - minRightDist;
-    int steerOffset = static_cast<int>(sideBias * 0.03f * frontRisk);
+    int steerOffset = static_cast<int>(sideBias * 1.0f * frontRisk);
     steer = 90 + steerOffset;
 
-    if (steer < 45) {
-      steer = 45;
+    if (steer < 30) {
+      steer = 30;
     }
-    if (steer > 135) {
-      steer = 135;
+    if (steer > 160) {
+      steer = 160;
     }
 
     if (minFrontDist < SAFE_DISTANCE_MM) {
-      throttle = 15;
+      throttle = 1;
       if (minLeftDist > minRightDist) {
         steer = 60;
       } else {
@@ -142,7 +142,7 @@ private:
 
     if (minFrontDist < 300.0f && minLeftDist < 350.0f && minRightDist < 350.0f) {
       steer = 90;
-      throttle = -30;
+      throttle = -1;
     }
 
     if (minLeftDist < SIDE_CLEARANCE_MM && minLeftDist < minRightDist) {
@@ -152,9 +152,11 @@ private:
     }
 
     geometry_msgs::msg::Twist twist_msg;
-    twist_msg.linear.x = static_cast<double>(throttle) / 40.0;
+    twist_msg.linear.x = static_cast<double>(throttle) / MAX_THROTTLE;
     twist_msg.angular.z = static_cast<double>(steer - 90) / 45.0;
     cmd_pub_->publish(twist_msg);
+
+    std::cout << "Throttle: " << throttle << " steer: " << steer << std::endl;
   }
 
   std::string lidarPort_;

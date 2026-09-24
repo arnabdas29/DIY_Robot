@@ -69,21 +69,22 @@ public:
 
 private:
   void cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg) {
-    int throttle = static_cast<int>(msg->linear.x * 40.0);
+    double max_throttle = 7.5;
+    int throttle = static_cast<int>(msg->linear.x * max_throttle);
     int steer = static_cast<int>((msg->angular.z * 45.0) + 90.0);
 
-    if (steer < 45) {
-      steer = 45;
+    if (steer < 30) {
+      steer = 30;
     }
-    if (steer > 135) {
-      steer = 135;
+    if (steer > 180) {
+      steer = 180;
     }
 
     if (throttle < -40) {
       throttle = -40;
     }
-    if (throttle > 40) {
-      throttle = 40;
+    if (throttle > max_throttle) {
+      throttle = max_throttle;
     }
 
     sendCommand(serialFd_, steer, throttle);
@@ -95,6 +96,8 @@ private:
 };
 
 int main(int argc, char** argv) {
+
+  std::cout<<" Hello"<<std::endl;
   rclcpp::init(argc, argv);
   auto node = std::make_shared<Esp32BridgeNode>();
   rclcpp::spin(node);
