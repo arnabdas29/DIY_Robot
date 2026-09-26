@@ -1,0 +1,2 @@
+*.so filter=lfs diff=lfs merge=lfs -text
+artifacts/deps/libsl_zed.so filter=lfs diff=lfs merge=lfs -text
