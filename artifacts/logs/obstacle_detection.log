@@ -1,0 +1,25 @@
+Starting >>> obstacle_detection
+[ 40%] Built target vfh_planner
+[100%] Built target obstacle_avoidance_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/lib/obstacle_detection/obstacle_avoidance_node
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/lib/libvfh_planner.a
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/launch/__pycache__/obstacle_detection.launch.cpython-311.pyc
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/launch/obstacle_detection.launch.py
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/ament_index/resource_index/package_run_dependencies/obstacle_detection
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/ament_index/resource_index/parent_prefix_path/obstacle_detection
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/environment/path.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/environment/path.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/local_setup.bash
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/local_setup.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/local_setup.zsh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/local_setup.dsv
+-- Symlinking: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/package.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/ament_index/resource_index/packages/obstacle_detection
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/cmake/obstacle_detectionConfig.cmake
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/cmake/obstacle_detectionConfig-version.cmake
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/obstacle_detection/share/obstacle_detection/package.xml
+Finished <<< obstacle_detection [0.31s]

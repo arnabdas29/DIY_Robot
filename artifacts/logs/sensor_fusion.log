@@ -1,0 +1,25 @@
+Starting >>> sensor_fusion
+[ 40%] Built target ekf_core
+[100%] Built target ekf_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/lib/sensor_fusion/ekf_node
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/lib/libekf_core.a
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/launch/__pycache__/sensor_fusion.launch.cpython-311.pyc
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/launch/sensor_fusion.launch.py
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/ament_index/resource_index/package_run_dependencies/sensor_fusion
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/ament_index/resource_index/parent_prefix_path/sensor_fusion
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/environment/path.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/environment/path.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/local_setup.bash
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/local_setup.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/local_setup.zsh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/local_setup.dsv
+-- Symlinking: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/package.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/ament_index/resource_index/packages/sensor_fusion
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/cmake/sensor_fusionConfig.cmake
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/cmake/sensor_fusionConfig-version.cmake
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/sensor_fusion/share/sensor_fusion/package.xml
+Finished <<< sensor_fusion [0.31s]

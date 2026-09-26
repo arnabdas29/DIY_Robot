@@ -1,0 +1,2137 @@
+{
+  "timestamp": "2026-09-26T11:55:21.190373+00:00",
+  "git_commit": null,
+  "dry_run": false,
+  "duration_sec": 8.226845,
+  "discovered_packages": [
+    {
+      "name": "controller",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/controller",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "diagnostics",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/diagnostics",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "encoder_interface",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/encoder_interface",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "lane_detection",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/lane_detection",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "lidar_interface",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/lidar_interface",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "obstacle_detection",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/obstacle_detection",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "planner",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/planner",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "recovery_manager",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/recovery_manager",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "safety_manager",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/safety_manager",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "esp32_estop",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/safety_manager/firmware/esp32_estop",
+      "build_type": "platformio"
+    },
+    {
+      "name": "sensor_fusion",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/sensor_fusion",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "zed_interface",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/src/zed_interface",
+      "build_type": "ament_cmake"
+    },
+    {
+      "name": "build.py",
+      "path": "/mnt/external/DIY/CameraModule/autonomous_rc/build.py",
+      "build_type": "build_script"
+    }
+  ],
+  "build_results": {
+    "encoder_interface": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/encoder_interface.log"
+    },
+    "lane_detection": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/lane_detection.log"
+    },
+    "lidar_interface": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/lidar_interface.log"
+    },
+    "obstacle_detection": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/obstacle_detection.log"
+    },
+    "planner": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/planner.log"
+    },
+    "safety_manager": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/safety_manager.log"
+    },
+    "sensor_fusion": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/sensor_fusion.log"
+    },
+    "zed_interface": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/zed_interface.log"
+    },
+    "controller": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/controller.log"
+    },
+    "diagnostics": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/diagnostics.log"
+    },
+    "recovery_manager": {
+      "status": "success",
+      "log": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/logs/recovery_manager.log"
+    }
+  },
+  "firmware_result": {
+    "status": "skipped",
+    "reason": "platformio not found"
+  },
+  "artifacts": {
+    "bin": [
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/controller/pure_pursuit_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/pure_pursuit_node",
+        "size": 1855048
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/src/diagnostics/scripts/clear_estop.py",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/clear_estop.py",
+        "size": 1307
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/src/diagnostics/scripts/gpu_profile.py",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/gpu_profile.py",
+        "size": 2444
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/src/diagnostics/scripts/record_bag.py",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/record_bag.py",
+        "size": 1532
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/diagnostics/system_health_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/system_health_node",
+        "size": 1736264
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/encoder_interface/encoder_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/encoder_node",
+        "size": 266944
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/lane_detection/lane_detection_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/lane_detection_node",
+        "size": 804000
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/lidar_interface/scan_filter_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/scan_filter_node",
+        "size": 666632
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/obstacle_detection/obstacle_avoidance_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/obstacle_avoidance_node",
+        "size": 1453928
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/planner/local_planner_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/local_planner_node",
+        "size": 1364800
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/recovery_manager/recovery_manager_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/recovery_manager_node",
+        "size": 1611280
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/safety_manager/estop_bridge_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/estop_bridge_node",
+        "size": 1083304
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/sensor_fusion/ekf_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/ekf_node",
+        "size": 1308640
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/zed_interface/zed_interface_node",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/bin/zed_interface_node",
+        "size": 409400
+      }
+    ],
+    "lib": [
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/controller/libsteering_controllers.a",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsteering_controllers.a",
+        "size": 25348
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/diagnostics/libgpu_cpu_monitor.a",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libgpu_cpu_monitor.a",
+        "size": 287302
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/lane_detection/liblane_detector.a",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/liblane_detector.a",
+        "size": 90836
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/obstacle_detection/libvfh_planner.a",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libvfh_planner.a",
+        "size": 9336
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/planner/libplanner_core.a",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libplanner_core.a",
+        "size": 101428
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/recovery_manager/libdwa_planner.a",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libdwa_planner.a",
+        "size": 7872
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/install/safety_manager/lib/libsafety_manager__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_generator_c.so",
+        "size": 22040
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/install/safety_manager/lib/libsafety_manager__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_generator_py.so",
+        "size": 16920
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/install/safety_manager/lib/libsafety_manager__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_typesupport_c.so",
+        "size": 17320
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/install/safety_manager/lib/libsafety_manager__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_typesupport_cpp.so",
+        "size": 17816
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/install/safety_manager/lib/libsafety_manager__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_typesupport_fastrtps_c.so",
+        "size": 23200
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/install/safety_manager/lib/libsafety_manager__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 24840
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/install/safety_manager/lib/libsafety_manager__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_typesupport_introspection_c.so",
+        "size": 19032
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/install/safety_manager/lib/libsafety_manager__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_typesupport_introspection_cpp.so",
+        "size": 24120
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/safety_manager/rosidl_generator_py/safety_manager/libsafety_manager__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libsafety_manager__rosidl_generator_py.so",
+        "size": 16920
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/safety_manager/rosidl_generator_py/safety_manager/safety_manager_s__rosidl_typesupport_c.cpython-311-x86_64-linux-gnu.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/safety_manager_s__rosidl_typesupport_c.cpython-311-x86_64-linux-gnu.so",
+        "size": 21496
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/safety_manager/rosidl_generator_py/safety_manager/safety_manager_s__rosidl_typesupport_fastrtps_c.cpython-311-x86_64-linux-gnu.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/safety_manager_s__rosidl_typesupport_fastrtps_c.cpython-311-x86_64-linux-gnu.so",
+        "size": 21512
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/safety_manager/rosidl_generator_py/safety_manager/safety_manager_s__rosidl_typesupport_introspection_c.cpython-311-x86_64-linux-gnu.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/safety_manager_s__rosidl_typesupport_introspection_c.cpython-311-x86_64-linux-gnu.so",
+        "size": 21528
+      },
+      {
+        "src": "/mnt/external/DIY/CameraModule/autonomous_rc/build/sensor_fusion/libekf_core.a",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/lib/libekf_core.a",
+        "size": 25714
+      }
+    ],
+    "firmware": [],
+    "deps": [
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librclcpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librclcpp.so",
+        "size": 3323440
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnav_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 59880
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 96096
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnav_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnav_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 62144
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnav_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 75088
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnav_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnav_msgs__rosidl_typesupport_cpp.so",
+        "size": 47640
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnav_msgs__rosidl_generator_py.so",
+        "size": 44744
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 104920
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgeometry_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 100280
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 153808
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 121584
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgeometry_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgeometry_msgs__rosidl_typesupport_cpp.so",
+        "size": 79496
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgeometry_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgeometry_msgs__rosidl_generator_py.so",
+        "size": 67512
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libackermann_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libackermann_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 17480
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libackermann_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libackermann_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 18184
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 23584
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libackermann_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libackermann_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 22784
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libackermann_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libackermann_msgs__rosidl_typesupport_cpp.so",
+        "size": 17288
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libackermann_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libackermann_msgs__rosidl_generator_py.so",
+        "size": 16016
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/liblibstatistics_collector.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/liblibstatistics_collector.so",
+        "size": 34224
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl.so",
+        "size": 271272
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librmw_implementation.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librmw_implementation.so",
+        "size": 60520
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libament_index_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libament_index_cpp.so",
+        "size": 56096
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_logging_spdlog.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_logging_spdlog.so",
+        "size": 34816
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_logging_interface.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_logging_interface.so",
+        "size": 15520
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_interfaces__rosidl_typesupport_fastrtps_c.so",
+        "size": 111224
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_interfaces__rosidl_typesupport_introspection_c.so",
+        "size": 148496
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 175456
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_interfaces__rosidl_typesupport_introspection_cpp.so",
+        "size": 202680
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_interfaces__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_interfaces__rosidl_typesupport_cpp.so",
+        "size": 72992
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_interfaces__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_interfaces__rosidl_generator_py.so",
+        "size": 67312
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_interfaces__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_interfaces__rosidl_typesupport_c.so",
+        "size": 59376
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_interfaces__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_interfaces__rosidl_generator_c.so",
+        "size": 129984
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_yaml_param_parser.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_yaml_param_parser.so",
+        "size": 43096
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libyaml-0.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libyaml-0.so.2",
+        "size": 132448
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 16384
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 17432
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosgraph_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 16264
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 16504
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosgraph_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosgraph_msgs__rosidl_typesupport_cpp.so",
+        "size": 16144
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosgraph_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosgraph_msgs__rosidl_generator_py.so",
+        "size": 15736
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosgraph_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosgraph_msgs__rosidl_typesupport_c.so",
+        "size": 15928
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosgraph_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosgraph_msgs__rosidl_generator_c.so",
+        "size": 16168
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 27840
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 34456
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatistics_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 24536
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 25288
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatistics_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatistics_msgs__rosidl_typesupport_cpp.so",
+        "size": 18312
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatistics_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatistics_msgs__rosidl_generator_py.so",
+        "size": 20936
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatistics_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatistics_msgs__rosidl_typesupport_c.so",
+        "size": 17712
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatistics_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatistics_msgs__rosidl_generator_c.so",
+        "size": 26696
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtracetools.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtracetools.so",
+        "size": 16704
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnav_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnav_msgs__rosidl_typesupport_c.so",
+        "size": 40424
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnav_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnav_msgs__rosidl_generator_c.so",
+        "size": 78536
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgeometry_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgeometry_msgs__rosidl_typesupport_c.so",
+        "size": 65576
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgeometry_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgeometry_msgs__rosidl_generator_c.so",
+        "size": 154960
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libackermann_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libackermann_msgs__rosidl_typesupport_c.so",
+        "size": 16864
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libackermann_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libackermann_msgs__rosidl_generator_c.so",
+        "size": 21384
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 96224
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so",
+        "size": 17032
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosidl_typesupport_fastrtps_c.so",
+        "size": 15752
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 157480
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 22904
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosidl_typesupport_fastrtps_cpp.so",
+        "size": 16520
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libfastcdr.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libfastcdr.so.1",
+        "size": 110776
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librmw.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librmw.so",
+        "size": 46944
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstd_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 111904
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so",
+        "size": 17456
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 125136
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so",
+        "size": 17304
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosidl_typesupport_introspection_cpp.so",
+        "size": 14960
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosidl_typesupport_introspection_c.so",
+        "size": 14936
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstd_msgs__rosidl_typesupport_cpp.so",
+        "size": 71536
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbuiltin_interfaces__rosidl_typesupport_cpp.so",
+        "size": 17152
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosidl_typesupport_cpp.so",
+        "size": 21680
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstd_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstd_msgs__rosidl_generator_py.so",
+        "size": 67792
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstd_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstd_msgs__rosidl_typesupport_c.so",
+        "size": 58240
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstd_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstd_msgs__rosidl_generator_c.so",
+        "size": 148800
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbuiltin_interfaces__rosidl_generator_py.so",
+        "size": 15960
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbuiltin_interfaces__rosidl_typesupport_c.so",
+        "size": 16752
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbuiltin_interfaces__rosidl_generator_c.so",
+        "size": 20960
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosidl_typesupport_c.so",
+        "size": 25664
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcpputils.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcpputils.so",
+        "size": 79216
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librosidl_runtime_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librosidl_runtime_c.so",
+        "size": 51488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcutils.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcutils.so",
+        "size": 105928
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstdc++.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstdc++.so.6",
+        "size": 23874544
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgcc_s.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgcc_s.so.1",
+        "size": 922624
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpython3.11.so.1.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpython3.11.so.1.0",
+        "size": 25352184
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libspdlog.so.1.15",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libspdlog.so.1.15",
+        "size": 606384
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libfmt.so.11",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libfmt.so.11",
+        "size": 162944
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdiagnostic_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdiagnostic_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 44296
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdiagnostic_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 40448
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdiagnostic_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdiagnostic_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 59904
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 55896
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdiagnostic_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdiagnostic_msgs__rosidl_typesupport_cpp.so",
+        "size": 32304
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdiagnostic_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdiagnostic_msgs__rosidl_generator_py.so",
+        "size": 25800
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdiagnostic_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdiagnostic_msgs__rosidl_typesupport_c.so",
+        "size": 26488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdiagnostic_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdiagnostic_msgs__rosidl_generator_c.so",
+        "size": 42720
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libcv_bridge.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libcv_bridge.so",
+        "size": 262928
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libimage_transport.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libimage_transport.so",
+        "size": 1403968
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_gapi.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_gapi.so.411",
+        "size": 7329408
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_stitching.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_stitching.so.411",
+        "size": 800728
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_alphamat.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_alphamat.so.411",
+        "size": 207640
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_aruco.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_aruco.so.411",
+        "size": 60760
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_bgsegm.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_bgsegm.so.411",
+        "size": 161824
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_bioinspired.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_bioinspired.so.411",
+        "size": 242680
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_ccalib.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_ccalib.so.411",
+        "size": 413568
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_cvv.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_cvv.so.411",
+        "size": 2244424
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_dnn_objdetect.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_dnn_objdetect.so.411",
+        "size": 48696
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_dnn_superres.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_dnn_superres.so.411",
+        "size": 73296
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_dpm.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_dpm.so.411",
+        "size": 135672
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_face.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_face.so.411",
+        "size": 648368
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_freetype.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_freetype.so.411",
+        "size": 48576
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_fuzzy.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_fuzzy.so.411",
+        "size": 76184
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_hdf.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_hdf.so.411",
+        "size": 75056
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_hfs.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_hfs.so.411",
+        "size": 103376
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_img_hash.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_img_hash.so.411",
+        "size": 107288
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_intensity_transform.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_intensity_transform.so.411",
+        "size": 142864
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_line_descriptor.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_line_descriptor.so.411",
+        "size": 212200
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_mcc.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_mcc.so.411",
+        "size": 599824
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_quality.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_quality.so.411",
+        "size": 92152
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_rapid.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_rapid.so.411",
+        "size": 95416
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_reg.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_reg.so.411",
+        "size": 125920
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_rgbd.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_rgbd.so.411",
+        "size": 1640448
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_saliency.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_saliency.so.411",
+        "size": 187752
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_signal.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_signal.so.411",
+        "size": 26080
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_stereo.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_stereo.so.411",
+        "size": 210160
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_structured_light.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_structured_light.so.411",
+        "size": 97192
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_phase_unwrapping.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_phase_unwrapping.so.411",
+        "size": 56976
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_superres.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_superres.so.411",
+        "size": 155552
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_optflow.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_optflow.so.411",
+        "size": 513808
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_surface_matching.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_surface_matching.so.411",
+        "size": 499552
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_tracking.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_tracking.so.411",
+        "size": 2384072
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_highgui.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_highgui.so.411",
+        "size": 576072
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_datasets.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_datasets.so.411",
+        "size": 803784
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_plot.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_plot.so.411",
+        "size": 50888
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_text.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_text.so.411",
+        "size": 581424
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_videostab.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_videostab.so.411",
+        "size": 300344
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_videoio.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_videoio.so.411",
+        "size": 765000
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_wechat_qrcode.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_wechat_qrcode.so.411",
+        "size": 790512
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_xfeatures2d.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_xfeatures2d.so.411",
+        "size": 3098104
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_ml.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_ml.so.411",
+        "size": 742904
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_shape.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_shape.so.411",
+        "size": 202432
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_ximgproc.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_ximgproc.so.411",
+        "size": 1860712
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_video.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_video.so.411",
+        "size": 642200
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_xobjdetect.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_xobjdetect.so.411",
+        "size": 108408
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_objdetect.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_objdetect.so.411",
+        "size": 1427392
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_calib3d.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_calib3d.so.411",
+        "size": 3859264
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_dnn.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_dnn.so.411",
+        "size": 9058472
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_features2d.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_features2d.so.411",
+        "size": 1076968
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_flann.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_flann.so.411",
+        "size": 782792
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_xphoto.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_xphoto.so.411",
+        "size": 344808
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_photo.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_photo.so.411",
+        "size": 873024
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_imgcodecs.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_imgcodecs.so.411",
+        "size": 723272
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_imgproc.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_imgproc.so.411",
+        "size": 29696440
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopencv_core.so.411",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopencv_core.so.411",
+        "size": 15064920
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsensor_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 122824
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 186280
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsensor_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 177488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsensor_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 216112
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsensor_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsensor_msgs__rosidl_generator_py.so",
+        "size": 97496
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsensor_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsensor_msgs__rosidl_typesupport_c.so",
+        "size": 59224
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsensor_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsensor_msgs__rosidl_generator_c.so",
+        "size": 154192
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsensor_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsensor_msgs__rosidl_typesupport_cpp.so",
+        "size": 72752
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libmessage_filters.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libmessage_filters.so",
+        "size": 15624
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libclass_loader.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libclass_loader.so",
+        "size": 111632
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libconsole_bridge.so.1.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libconsole_bridge.so.1.0",
+        "size": 23656
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtinyxml2.so.11",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtinyxml2.so.11",
+        "size": 133792
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopenvino.so.2500",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopenvino.so.2500",
+        "size": 21613072
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgomp.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgomp.so.1",
+        "size": 1674616
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libQt6Widgets.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libQt6Widgets.so.6",
+        "size": 10052448
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libQt6Gui.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libQt6Gui.so.6",
+        "size": 11632960
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libQt6Core.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libQt6Core.so.6",
+        "size": 8266512
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libfreetype.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libfreetype.so.6",
+        "size": 874488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libharfbuzz.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libharfbuzz.so.0",
+        "size": 1543688
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libhdf5.so.310",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libhdf5.so.310",
+        "size": 4628992
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libQt6Test.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libQt6Test.so.6",
+        "size": 597040
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libavcodec.so.61",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libavcodec.so.61",
+        "size": 16354088
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libavformat.so.61",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libavformat.so.61",
+        "size": 2815888
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libavutil.so.59",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libavutil.so.59",
+        "size": 1058744
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libswscale.so.8",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libswscale.so.8",
+        "size": 616336
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libiconv.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libiconv.so.2",
+        "size": 1182640
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libprotobuf.so.29.3.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libprotobuf.so.29.3.0",
+        "size": 4100208
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_message.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_message.so.2501.0.0",
+        "size": 68952
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_nullguard.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_nullguard.so.2501.0.0",
+        "size": 15088
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_hash.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_hash.so.2501.0.0",
+        "size": 15736
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libavif.so.16",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libavif.so.16",
+        "size": 272512
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libjpeg.so.8",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libjpeg.so.8",
+        "size": 913736
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libwebpdecoder.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libwebpdecoder.so.3",
+        "size": 469040
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libwebp.so.7",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libwebp.so.7",
+        "size": 789584
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libwebpdemux.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libwebpdemux.so.2",
+        "size": 29264
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libwebpmux.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libwebpmux.so.3",
+        "size": 52328
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpng16.so.16",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpng16.so.16",
+        "size": 276184
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libz.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libz.so.1",
+        "size": 117168
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtiff.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtiff.so.6",
+        "size": 693112
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libjasper.so.7",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libjasper.so.7",
+        "size": 437304
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libOpenEXR.so.32",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libOpenEXR.so.32",
+        "size": 1651008
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/liblapack.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/liblapack.so.3",
+        "size": 41542616
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtbb.so.12",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtbb.so.12",
+        "size": 389792
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpugixml.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpugixml.so.1",
+        "size": 302072
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libEGL.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libEGL.so.1",
+        "size": 93464
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libfontconfig.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libfontconfig.so.1",
+        "size": 529024
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libX11.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libX11.so.6",
+        "size": 1476144
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libglib-2.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libglib-2.0.so.0",
+        "size": 1573008
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libQt6DBus.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libQt6DBus.so.6",
+        "size": 1121864
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libxkbcommon.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libxkbcommon.so.0",
+        "size": 1202840
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libGL.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libGL.so.1",
+        "size": 727544
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libicui18n.so.75",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libicui18n.so.75",
+        "size": 4817400
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libicuuc.so.75",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libicuuc.so.75",
+        "size": 2585632
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdouble-conversion.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdouble-conversion.so.3",
+        "size": 77488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpcre2-16.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpcre2-16.so.0",
+        "size": 725920
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libzstd.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libzstd.so.1",
+        "size": 1198840
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgraphite2.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgraphite2.so.3",
+        "size": 179728
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libcrypto.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libcrypto.so.3",
+        "size": 7252520
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libcurl.so.4",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libcurl.so.4",
+        "size": 1052504
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsz.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsz.so.2",
+        "size": 55392
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libswresample.so.5",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libswresample.so.5",
+        "size": 120720
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libvpx.so.9",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libvpx.so.9",
+        "size": 2213864
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/liblzma.so.5",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/liblzma.so.5",
+        "size": 222712
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdav1d.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdav1d.so.6",
+        "size": 2626568
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librsvg-2.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librsvg-2.so.2",
+        "size": 12028512
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgobject-2.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgobject-2.0.so.0",
+        "size": 483624
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libcairo.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libcairo.so.2",
+        "size": 1275800
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaom.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaom.so.3",
+        "size": 7632336
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libmp3lame.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libmp3lame.so.0",
+        "size": 328552
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopus.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopus.so.0",
+        "size": 532392
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libSvtAv1Enc.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libSvtAv1Enc.so.3",
+        "size": 8038224
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libvorbis.so.0.4.9",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libvorbis.so.0.4.9",
+        "size": 262176
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libvorbisenc.so.2.0.12",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libvorbisenc.so.2.0.12",
+        "size": 806984
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libx264.so.164",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libx264.so.164",
+        "size": 2090992
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libx265.so.199",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libx265.so.199",
+        "size": 23165472
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libopenh264.so.8",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libopenh264.so.8",
+        "size": 1380472
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libva.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libva.so.2",
+        "size": 247056
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libxml2.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libxml2.so.2",
+        "size": 1598072
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libbz2.so.1.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libbz2.so.1.0",
+        "size": 241912
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libssl.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libssl.so.3",
+        "size": 1219104
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libva-drm.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libva-drm.so.2",
+        "size": 16688
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libva-x11.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libva-x11.so.2",
+        "size": 27952
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdrm.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdrm.so.2",
+        "size": 110680
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_die_if_null.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_die_if_null.so.2501.0.0",
+        "size": 16144
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_statusor.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_statusor.so.2501.0.0",
+        "size": 23080
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libutf8_validity.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libutf8_validity.so",
+        "size": 15304
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_check_op.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_check_op.so.2501.0.0",
+        "size": 38024
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_conditions.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_conditions.so.2501.0.0",
+        "size": 15528
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_raw_hash_set.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_raw_hash_set.so.2501.0.0",
+        "size": 22544
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_status.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_status.so.2501.0.0",
+        "size": 55488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_cord.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_cord.so.2501.0.0",
+        "size": 156352
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_cordz_info.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_cordz_info.so.2501.0.0",
+        "size": 28096
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_cord_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_cord_internal.so.2501.0.0",
+        "size": 90888
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_synchronization.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_synchronization.so.2501.0.0",
+        "size": 74504
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_time.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_time.so.2501.0.0",
+        "size": 113424
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_time_zone.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_time_zone.so.2501.0.0",
+        "size": 159088
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_str_format_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_str_format_internal.so.2501.0.0",
+        "size": 146488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_strings.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_strings.so.2501.0.0",
+        "size": 165392
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_spinlock_wait.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_spinlock_wait.so.2501.0.0",
+        "size": 15608
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_throw_delegate.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_throw_delegate.so.2501.0.0",
+        "size": 28952
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_examine_stack.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_examine_stack.so.2501.0.0",
+        "size": 16232
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_format.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_format.so.2501.0.0",
+        "size": 21264
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_structured_proto.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_structured_proto.so.2501.0.0",
+        "size": 15488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_strerror.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_strerror.so.2501.0.0",
+        "size": 16464
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_proto.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_proto.so.2501.0.0",
+        "size": 15896
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_log_sink_set.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_log_sink_set.so.2501.0.0",
+        "size": 24944
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_internal_globals.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_internal_globals.so.2501.0.0",
+        "size": 17112
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_globals.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_globals.so.2501.0.0",
+        "size": 23408
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_base.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_base.so.2501.0.0",
+        "size": 25376
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_raw_logging_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_raw_logging_internal.so.2501.0.0",
+        "size": 17184
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_city.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_city.so.2501.0.0",
+        "size": 15240
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_low_level_hash.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_low_level_hash.so.2501.0.0",
+        "size": 15088
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librav1e.so.0.7",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librav1e.so.0.7",
+        "size": 31522072
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libsharpyuv.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsharpyuv.so.0",
+        "size": 46048
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libLerc.so.4",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libLerc.so.4",
+        "size": 876096
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdeflate.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdeflate.so.0",
+        "size": 101872
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libIlmThread.so.32",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libIlmThread.so.32",
+        "size": 56776
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libOpenEXRCore.so.32",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libOpenEXRCore.so.32",
+        "size": 933624
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libIex.so.32",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libIex.so.32",
+        "size": 789912
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libImath.so.29",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libImath.so.29",
+        "size": 330936
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgfortran.so.5",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgfortran.so.5",
+        "size": 11532656
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libGLdispatch.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libGLdispatch.so.0",
+        "size": 1030840
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libexpat.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libexpat.so.1",
+        "size": 195552
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libxcb.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libxcb.so.1",
+        "size": 228648
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpcre2-8.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpcre2-8.so.0",
+        "size": 779720
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libdbus-1.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libdbus-1.so.3",
+        "size": 418512
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libGLX.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libGLX.so.0",
+        "size": 348424
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libicudata.so.75",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libicudata.so.75",
+        "size": 30741448
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libnghttp2.so.14",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libnghttp2.so.14",
+        "size": 200576
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libssh2.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libssh2.so.1",
+        "size": 351048
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgssapi_krb5.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgssapi_krb5.so.2",
+        "size": 392480
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libcairo-gobject.so.2",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libcairo-gobject.so.2",
+        "size": 49056
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgdk_pixbuf-2.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgdk_pixbuf-2.0.so.0",
+        "size": 225952
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgio-2.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgio-2.0.so.0",
+        "size": 2412760
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpangocairo-1.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpangocairo-1.0.so.0",
+        "size": 80112
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpango-1.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpango-1.0.so.0",
+        "size": 527272
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libffi.so.8",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libffi.so.8",
+        "size": 50744
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libxcb-render.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libxcb-render.so.0",
+        "size": 76720
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libX11-xcb.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libX11-xcb.so.1",
+        "size": 14992
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libxcb-shm.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libxcb-shm.so.0",
+        "size": 17096
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpixman-1.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpixman-1.so.0",
+        "size": 876400
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libogg.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libogg.so.0",
+        "size": 43296
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libXext.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libXext.so.6",
+        "size": 96344
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libXfixes.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libXfixes.so.3",
+        "size": 34720
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libxcb-dri3.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libxcb-dri3.so.0",
+        "size": 27688
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_leak_check.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_leak_check.so.2501.0.0",
+        "size": 15544
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_crc_cord_state.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_crc_cord_state.so.2501.0.0",
+        "size": 31848
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_cordz_functions.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_cordz_functions.so.2501.0.0",
+        "size": 16152
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_cordz_handle.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_cordz_handle.so.2501.0.0",
+        "size": 22304
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_stacktrace.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_stacktrace.so.2501.0.0",
+        "size": 16104
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_kernel_timeout_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_kernel_timeout_internal.so.2501.0.0",
+        "size": 21368
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_tracing_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_tracing_internal.so.2501.0.0",
+        "size": 15152
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_malloc_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_malloc_internal.so.2501.0.0",
+        "size": 26776
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_int128.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_int128.so.2501.0.0",
+        "size": 26832
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_strings_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_strings_internal.so.2501.0.0",
+        "size": 23024
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_symbolize.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_symbolize.so.2501.0.0",
+        "size": 39080
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_log_sink.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_log_sink.so.2501.0.0",
+        "size": 15648
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libquadmath.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libquadmath.so.0",
+        "size": 991312
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libXau.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libXau.so.6",
+        "size": 17144
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libXdmcp.so.6",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libXdmcp.so.6",
+        "size": 30144
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libkrb5.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libkrb5.so.3",
+        "size": 1051368
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libk5crypto.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libk5crypto.so.3",
+        "size": 108360
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libcom_err.so.3",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libcom_err.so.3",
+        "size": 22232
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libkrb5support.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libkrb5support.so.0",
+        "size": 66824
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libkeyutils.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libkeyutils.so.1",
+        "size": 39192
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libgmodule-2.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libgmodule-2.0.so.0",
+        "size": 25960
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libpangoft2-1.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libpangoft2-1.0.so.0",
+        "size": 140296
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libfribidi.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libfribidi.so.0",
+        "size": 135144
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_crc32c.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_crc32c.so.2501.0.0",
+        "size": 24472
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_exponential_biased.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_exponential_biased.so.2501.0.0",
+        "size": 15600
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_debugging_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_debugging_internal.so.2501.0.0",
+        "size": 27904
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_demangle_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_demangle_internal.so.2501.0.0",
+        "size": 76488
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_crc_internal.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_crc_internal.so.2501.0.0",
+        "size": 27160
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_demangle_rust.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_demangle_rust.so.2501.0.0",
+        "size": 23944
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_decode_rust_punycode.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_decode_rust_punycode.so.2501.0.0",
+        "size": 15480
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libabsl_utf8_for_code_point.so.2501.0.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libabsl_utf8_for_code_point.so.2501.0.0",
+        "size": 15168
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libyaml-cpp.so.0.8",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libyaml-cpp.so.0.8",
+        "size": 610392
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libstatic_transform_broadcaster_node.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libstatic_transform_broadcaster_node.so",
+        "size": 211792
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_ros.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_ros.so",
+        "size": 1027288
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2.so",
+        "size": 189904
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librclcpp_action.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librclcpp_action.so",
+        "size": 251248
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/librcl_action.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/librcl_action.so",
+        "size": 79968
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 53568
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaction_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 24864
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so",
+        "size": 16280
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 45816
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaction_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaction_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 31888
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so",
+        "size": 16816
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 74256
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 34168
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so",
+        "size": 17160
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 60336
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaction_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 32792
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so",
+        "size": 16888
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_msgs__rosidl_typesupport_cpp.so",
+        "size": 42680
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaction_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaction_msgs__rosidl_typesupport_cpp.so",
+        "size": 25096
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libunique_identifier_msgs__rosidl_typesupport_cpp.so",
+        "size": 16200
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_msgs__rosidl_generator_py.so",
+        "size": 31240
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_msgs__rosidl_typesupport_c.so",
+        "size": 35472
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libtf2_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libtf2_msgs__rosidl_generator_c.so",
+        "size": 73232
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaction_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaction_msgs__rosidl_generator_py.so",
+        "size": 25264
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaction_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaction_msgs__rosidl_typesupport_c.so",
+        "size": 23952
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libaction_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libaction_msgs__rosidl_generator_c.so",
+        "size": 36400
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_generator_py.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libunique_identifier_msgs__rosidl_generator_py.so",
+        "size": 15560
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_typesupport_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libunique_identifier_msgs__rosidl_typesupport_c.so",
+        "size": 15976
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_generator_c.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libunique_identifier_msgs__rosidl_generator_c.so",
+        "size": 16024
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/liborocos-kdl.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/liborocos-kdl.so",
+        "size": 921856
+      },
+      {
+        "src": "/usr/local/zed/lib/libsl_zed.so",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libsl_zed.so",
+        "size": 187369072
+      },
+      {
+        "src": "/usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudart.so.12",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libcudart.so.12",
+        "size": 683360
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libturbojpeg.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libturbojpeg.so.0",
+        "size": 1286904
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libusb-1.0.so.0",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libusb-1.0.so.0",
+        "size": 142064
+      },
+      {
+        "src": "/home/u_ramesa2/micromamba/envs/ros_env/lib/libudev.so.1",
+        "dest": "/mnt/external/DIY/CameraModule/autonomous_rc/artifacts/deps/libudev.so.1",
+        "size": 455368
+      }
+    ]
+  }
+}

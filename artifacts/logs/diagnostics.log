@@ -1,0 +1,27 @@
+Starting >>> diagnostics
+[ 40%] Built target gpu_cpu_monitor
+[100%] Built target system_health_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/lib/diagnostics/system_health_node
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/lib/libgpu_cpu_monitor.a
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/lib/diagnostics/record_bag.py
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/lib/diagnostics/clear_estop.py
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/lib/diagnostics/gpu_profile.py
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/launch/diagnostics.launch.py
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/ament_index/resource_index/package_run_dependencies/diagnostics
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/ament_index/resource_index/parent_prefix_path/diagnostics
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/environment/path.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/environment/path.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/local_setup.bash
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/local_setup.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/local_setup.zsh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/local_setup.dsv
+-- Symlinking: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/package.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/ament_index/resource_index/packages/diagnostics
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/cmake/diagnosticsConfig.cmake
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/cmake/diagnosticsConfig-version.cmake
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/diagnostics/share/diagnostics/package.xml
+Finished <<< diagnostics [0.28s]

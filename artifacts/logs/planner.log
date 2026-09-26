@@ -1,0 +1,25 @@
+Starting >>> planner
+[ 50%] Built target planner_core
+[100%] Built target local_planner_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/lib/planner/local_planner_node
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/lib/libplanner_core.a
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/launch/planner.launch.py
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/config/raceline.yaml
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/ament_index/resource_index/package_run_dependencies/planner
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/ament_index/resource_index/parent_prefix_path/planner
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/environment/path.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/environment/path.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/local_setup.bash
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/local_setup.sh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/local_setup.zsh
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/local_setup.dsv
+-- Symlinking: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/package.dsv
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/ament_index/resource_index/packages/planner
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/cmake/plannerConfig.cmake
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/cmake/plannerConfig-version.cmake
+-- Up-to-date symlink: /mnt/external/DIY/CameraModule/autonomous_rc/install/planner/share/planner/package.xml
+Finished <<< planner [0.28s]
