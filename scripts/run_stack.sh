@@ -6,7 +6,7 @@
 # instead of silently latching EMERGENCY_STOP.
 #
 # Usage:
-#   ./scripts/run_stack.sh [--skip-preflight] [--no-estop-hardware] [mode]
+#   ./scripts/run_stack.sh [--skip-preflight] [--no-estop-hardware] [--no-lidar] [mode]
 #   mode: "speed" (default) or "obstacle" -- selects the ZED feature profile.
 #   --skip-preflight: skip ALL hardware pre-flight checks (e.g. CI/sandbox runs).
 #   --no-estop-hardware: bench-test mode -- no E-Stop hardware attached. Skips
@@ -14,6 +14,10 @@
 #     estop_bridge_node won't permanently latch EMERGENCY_STOP from a missing
 #     serial link. Other safety logic (obstacle/wall/cliff stops) is unaffected.
 #     NEVER use this for an actual driving/competition run.
+#   --no-lidar: bench-test mode -- no LiDAR hardware attached. Skips launching
+#     lidar_interface entirely (enable_lidar:=false) and skips its preflight
+#     check. obstacle_detection still runs on ZED depth alone, but wall/side
+#     clearance coverage is reduced to the camera's narrower FOV vs 360 LiDAR.
 #
 # Environment detection (in order):
 #   1. This sandbox's userspace RoboStack env (~/micromamba/envs/ros_env),
@@ -29,10 +33,12 @@ WORKSPACE_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 SKIP_PREFLIGHT=0
 NO_ESTOP_HARDWARE=0
+NO_LIDAR=0
 while [ $# -gt 0 ]; do
   case "$1" in
     --skip-preflight) SKIP_PREFLIGHT=1; shift ;;
     --no-estop-hardware) NO_ESTOP_HARDWARE=1; shift ;;
+    --no-lidar) NO_LIDAR=1; shift ;;
     *) break ;;
   esac
 done
@@ -80,8 +86,12 @@ preflight_check() {
 
   if [ -e /dev/ttyUSB_lidar ] || [ -e /dev/ttyACM_lidar ]; then
     echo "[OK  ] LiDAR serial device present"
+  elif [ "$NO_LIDAR" = "1" ]; then
+    echo "[SKIP] LiDAR hardware check (--no-lidar: bench-test mode, enable_lidar:=false will be passed)"
   else
     echo "[WARN] No /dev/ttyUSB_lidar (or ttyACM_lidar) device found -- lidar_interface will fail to open its port."
+    echo "       No LiDAR hardware yet? Re-run with --no-lidar to skip it cleanly (obstacle"
+    echo "       detection still runs on ZED depth alone, with reduced side/wall coverage)."
   fi
 
   echo
@@ -105,6 +115,10 @@ LAUNCH_ARGS=("mode:=${MODE}")
 if [ "$NO_ESTOP_HARDWARE" = "1" ]; then
   echo "*** --no-estop-hardware: bypass_estop_hardware:=true -- E-Stop hardware fail-safe latch is DISABLED. Bench-testing only. ***"
   LAUNCH_ARGS+=("bypass_estop_hardware:=true")
+fi
+if [ "$NO_LIDAR" = "1" ]; then
+  echo "*** --no-lidar: enable_lidar:=false -- lidar_interface will not be launched. ***"
+  LAUNCH_ARGS+=("enable_lidar:=false")
 fi
 
 if [ -d "$HOME/micromamba/envs/ros_env" ]; then
